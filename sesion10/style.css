@@ -1,0 +1,13 @@
+header{
+    display: flex;
+    justify-content: space-around;
+    background-color: aquamarine;
+    padding: 20px;
+}
+
+.sesion{
+    text-decoration: none;
+}
+.sesion:hover{
+    color: white;
+}
