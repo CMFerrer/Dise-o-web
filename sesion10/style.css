@@ -1,13 +1,17 @@
-header{
+h1{
+    background-color: aquamarine;
+    padding: 1em;
+    text-align: center;
+}
+.subtitulo{
+    color: blue;
+}
+p{
+    padding: 0 1em;
+    text-align: justify;
+}
+.listas{
     display: flex;
     justify-content: space-around;
-    background-color: aquamarine;
-    padding: 20px;
-}
-
-.sesion{
-    text-decoration: none;
-}
-.sesion:hover{
-    color: white;
+    align-items: center;
 }
