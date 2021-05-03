@@ -1,0 +1,31 @@
+header{
+    display: flex;
+    align-items: center;
+}
+.datos-personales{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.datos-personales label{
+    margin-bottom: 1em;
+}
+.datos-personales input, .datos-personales select{
+    position: absolute;
+    left: 8em;
+}
+.mejor-pelicula{
+    display: flex;
+    flex-direction: column;
+}
+.mejor-pelicula label{
+    margin-bottom: 0.3em;
+}
+.pelis-no-vistas{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0.3em;
+}
+input[type="reset"]{
+    margin: 1em 1em;
+}
