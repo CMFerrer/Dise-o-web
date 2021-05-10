@@ -1,6 +1,10 @@
 header{
     display: flex;
     align-items: center;
+    justify-content: space-around;
+}
+form{
+    padding: 0 8em;
 }
 .datos-personales{
     display: flex;
@@ -26,6 +30,7 @@ header{
     flex-direction: column;
     margin-bottom: 0.3em;
 }
-input[type="reset"]{
+input[type="reset"], input[type="button"]{
     margin: 1em 1em;
+    padding: 0.25em 0.625em;
 }
