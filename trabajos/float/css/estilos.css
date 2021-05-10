@@ -1,0 +1,12 @@
+figure{
+    float: right;
+}
+p{
+    background-color: rgb(111, 230, 111);
+}
+p:last-of-type{
+    display: inline;
+    background-color: yellow;
+    position: absolute;
+    right: 5px;
+}
