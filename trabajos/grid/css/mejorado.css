@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+div{
+    display: grid;
+    height: 100vh;
+    grid-template-areas: 
+    'head head head head' 
+    'nav section section aside'  
+    'nav section section aside'
+    'nav section section aside'
+    'foot foot foot foot';
+    color: white;
+}
+header{
+    background-color: violet;
+    grid-area: head;
+}
+nav{
+    background-color: burlywood;
+    grid-area: nav;
+}
+section{
+    background-color: coral;
+    grid-area: section;
+}
+aside{
+    background-color: hotpink;
+    grid-area: aside;
+}
+footer{
+    background-color: darkorchid;
+    grid-area: foot;
+}
+nav,section,aside{
+}
