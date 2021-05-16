@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    background-color: violet;
+    height: 150px;
+}
+nav{
+    background-color: burlywood;
+    width: 25%;
+}
+section{
+    background-color: coral;
+    width: 50%;
+}
+aside{
+    background-color: hotpink;
+    width: 25%;
+}
+footer{
+    background-color: darkorchid;
+    clear: both;
+    height: 100px;
+}
+nav,section,aside{
+    float: left;
+    height: 350px;
+}

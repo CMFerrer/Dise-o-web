@@ -1,0 +1,20 @@
+.grid{
+    display: grid;
+    grid-template-areas: 'head head' 'nav main' 'foot foot';
+}
+.a{
+    background-color:  aquamarine;
+    grid-area: head;
+}
+.b{
+    background-color: cornsilk;
+    grid-area: nav;
+}
+.c{
+    background-color: coral;
+    grid-area: main;
+}
+.d{
+    background-color: deepskyblue;
+    grid-area: foot;
+}
