@@ -1,0 +1,32 @@
+header{
+    background-color: red;
+    text-align: center;
+}
+header h1{
+    padding: 10px;
+    color: white;
+    margin:0;
+}
+nav{
+    background-color: gray;
+    padding-left: 40px;
+    margin-top: 0;
+}
+a{
+    color: white;
+    text-decoration: none;
+    margin-right: 20px;
+}
+figure{
+    float: right;
+}
+h3{
+    color: red;
+}
+p:last-of-type{
+    position: absolute;
+    right: 6px;
+    background-color: red;
+    color: white;
+    padding: 1px 24px;
+}
