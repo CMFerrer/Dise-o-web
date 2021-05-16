@@ -1,0 +1,84 @@
+body{
+    background-color: bisque;
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #fff;
+    border-radius: 10px;
+    margin: 10px 240px;
+    padding: 10px 20px;
+}
+form{
+    margin: 10px 240px;
+    padding: 10px 20px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+.datos-personales{
+    padding-top: 20px;
+}
+.caja-texto{
+    position: relative;
+}
+.caja-texto input{
+    height: 20px;
+    width: 200px;
+    margin-bottom: 24px;
+    border:none;
+    border-bottom: 2px solid black;
+    outline: none;
+}
+input:focus{
+    border-color: blue;
+}
+
+input:focus ~ label,
+input:valid ~ label {
+  color: blue;
+  top: -20px;
+  left: -2px;
+}
+.caja-texto label {
+    position: absolute;
+    top: 2px;
+    left: 4px;
+    color: gray;
+    pointer-events: none;
+    transition: 0.3s;
+  }
+select{
+    height: 20px;
+    width: 200px;
+}
+select:valid ~ label{
+    position: absolute;
+    color: blue;
+    top: -20px;
+    left: -2px;
+}
+.mejor-pelicula{
+    display: flex;
+    flex-direction: column;
+}
+.mejor-pelicula label{
+    margin-bottom: 0.3em;
+}
+.pelis-no-vistas{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0.3em;
+}
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+input[type="reset"], input[type="button"]{
+    margin: 1em 1em;
+    padding: 18px 100px;
+    color: #fff;
+    background: linear-gradient(to right,bisque,rgb(219, 117, 117));
+    border: none;
+    box-shadow: 1px 1px 6px black;
+}
