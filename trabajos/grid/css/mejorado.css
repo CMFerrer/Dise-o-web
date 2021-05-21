@@ -2,35 +2,135 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
-div{
+
+body{
     display: grid;
-    height: 100vh;
+    grid-template-columns: 1fr;
+    grid-template-rows: 180px 880px 260px 50px;
     grid-template-areas: 
-    'head head head head' 
-    'nav section section aside'  
-    'nav section section aside'
-    'nav section section aside'
-    'foot foot foot foot';
-    color: white;
+    'my-nav'
+    'my-article'
+    'my-aside'
+    'my-footer';
+    background-color: rgb(72, 0, 139);
 }
-header{
-    background-color: violet;
-    grid-area: head;
-}
+
 nav{
-    background-color: burlywood;
-    grid-area: nav;
+    background-color: rgb(102, 102, 102);
+    grid-area: my-nav;
+    padding: 5px
 }
+nav ul {
+    list-style: none;
+}
+a{
+    color:white;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+img{
+    height: 60px;
+    float: left;
+}
+
 section{
-    background-color: coral;
-    grid-area: section;
+    padding: 16px;
+
 }
+article{
+    background-color: rgb(221, 198, 227);
+    grid-area: my-article;
+    height: 280px;
+    text-align: justify;
+    padding: 20px 20px;
+}
+article h2,article p{
+    margin-left: 80px;
+    font-size: 16px;
+}
+
 aside{
-    background-color: hotpink;
-    grid-area: aside;
+    background-color: rgb(138, 0, 139);
+    grid-area: my-aside;
+    color: white;
+    padding-top: 24px;
 }
+aside h2{font-size: 20px;margin-left: 20px;}
+aside ul{margin-left: 60px;margin-top: 20px;}
+
 footer{
-    background-color: darkorchid;
-    grid-area: foot;
+    background-color: rgb(154, 50, 205);
+    grid-area: my-footer;
+    color: white;
+    text-align: center;
+    padding-top: 10px;
 }
+footer address, footer small{
+    font-size: 10px;
+}
+
+ /* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    body{
+        grid-template-columns: 500px 1fr;
+        grid-template-rows: 180px 1fr 50px;
+        grid-template-areas: 
+        'my-nav my-nav'
+        'my-article my-aside'
+        'my-footer my-footer';
+    }
+    article{
+        height: 200px;
+        padding: 20px 20px;
+    }
+    footer address, footer small{
+        font-size: 12px;
+    }
+  }
+
+ /* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+
+    body{
+    grid-template-columns: 300px 1fr 300px;
+    min-height: 100vh;
+    grid-template-rows: 1fr 60px;
+    grid-template-areas: 
+    'my-nav my-article my-aside'
+    'my-footer my-footer my-footer';
+    }
+    nav{
+        padding: 10px 30px;
+    }
+    a{
+        text-align: left;
+        margin-bottom: 40px;
+        font-size: 24px;
+    }
+    aside h2{
+        font-size: 48px;
+    }
+    aside ul{
+        font-size: 24px;
+    }
+    article{
+        height: 220px;
+        padding: 20px 40px;
+    }
+    img{
+        height: 100px;
+    }
+    article h2,article p{
+        margin-left: 120px;
+        font-size: 24px;
+    }
+
+    footer address, footer small{
+        font-size: 16px;
+    }
+  }
