@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: bisque;
+}
+.contenedor{
+    margin: 20px auto;
+    background-color: #fff;
+    width: 80%;
+    padding: 10px;
+    box-shadow: 6px 4px 20px;
+}
+h1,p{
+    text-align: center;
+}
+.redes-sociales{
+    display: flex;
+    justify-content: space-around;
+}
+form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+input{
+    margin-top: 20px;
+}
+input[type="text"]{
+    height: 36px;
+}
+input[type="email"],input[type="password"]{
+    width: 76%;
+    height: 36px;
+}
+label{
+    text-align: center;
+    display: block;
+}
+input[type="submit"]{
+    display: block;
+    margin: 20px auto;
+    padding: 4px 16px;
+    
+}
